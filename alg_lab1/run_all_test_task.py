@@ -12,6 +12,8 @@ def run_all_tests_task():
     test_task_arr = [
         'alg_lab1.task7.tests.test_task7',
         'alg_lab1.task11.tests.test_task11'
+        'alg_lab1.task2.tests.test_task2'
+        'alg_lab1.task8.tests.test_task8'
     ]
     for test_file in test_task_arr:
         task = [i for i in test_file.split(".")][1]
