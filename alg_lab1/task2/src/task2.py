@@ -25,7 +25,7 @@ def min_refills(d, m, n, stops):
     return num_refills
 
 def main(input_path, output_path):
-    d, m, n, stops= open_file(input_path, 2)
+    d, m, n, stops = open_file(input_path, 2)
     result = min_refills(d, m, n, stops)
     print_in_terminal([d, m, n, stops], result, "---Task_2 Lab_1---")
     write_file(result, output_path)

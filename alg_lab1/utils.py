@@ -4,6 +4,12 @@ def open_file(file_path, task):
             k, n = map(int, file.readline().split())
             arr = [int(i) for i in file.readline().split()]
             return k, n, arr
+        if task == 2:
+            d = int(file.readline())
+            m = int(file.readline())
+            n = int(file.readline())
+            stops = [int(i) for i in file.readline().split()]
+            return d, m, n, stops
 
 
 
