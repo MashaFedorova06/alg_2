@@ -10,6 +10,13 @@ def open_file(file_path, task):
             n = int(file.readline())
             stops = [int(i) for i in file.readline().split()]
             return d, m, n, stops
+        if task == 8:
+            n = int(file.readline())
+            requests = []
+            for i in range(n):
+                start, end = map(int, file.readline().split())
+                requests.append((start, end))
+            return requests
 
 
 
