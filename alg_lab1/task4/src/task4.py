@@ -23,7 +23,7 @@ def main(input_path, output_path):
     n, segments = open_file(input_path, 4)
     result = find_min_segments(segments)
     result_write = str(len(result)) + '\n' + " ".join(map(str, result))
-    print_in_terminal([n, segments], str(len(result)) + '\n' + " ".join(map(str, result)), "---Task_4 Lab_1---")
+    print_in_terminal([n, segments], str(len(result)) + "\n" + " ".join(map(str, result)), "---Task_4 Lab_1---")
     write_file(result_write, output_path)
 
 

@@ -45,7 +45,7 @@ class TestFindSegments(unittest.TestCase):
         self.assertLessEqual(t_end, expected_time, f"Значение {t_end} превышает порог {expected_time}")
         self.assertLessEqual(memory, expected_memory, f"Значение {memory} превышает порог {expected_memory}")
 
-    def test_multiple_segments(self):
+    def test_joint_segments(self):
         # Given
         segments = [(1, 3), (2, 5), (4, 7), (5, 6)]
         expected_result = [3, 6]
