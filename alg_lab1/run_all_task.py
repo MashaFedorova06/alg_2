@@ -1,7 +1,7 @@
 from alg_lab1.task7.src.task7 import main as task7
 from alg_lab1.task11.src.task11 import main as task11
 from alg_lab1.task8.src.task8 import main as task8
-from alg_lab1.task11.src.task11 import main as task2
+from alg_lab1.task2.src.task2 import main as task2
 from alg_lab1.task4.src.task4 import main as task4
 from alg_lab1.task12.src.task12 import main as task12
 
