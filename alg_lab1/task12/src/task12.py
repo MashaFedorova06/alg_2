@@ -30,7 +30,7 @@ def subsequence_greedy(n, sequence):
 def main(input_path, output_path):
     n, numbers = open_file(input_path, 12)
     result = subsequence_greedy(n, numbers)
-    print_in_terminal(([n, numbers]), result, "---Task_4 Lab_1---")
+    print_in_terminal(([n, numbers]), result, "---Task_12 Lab_1---")
     write_file(result, output_path)
 
 
