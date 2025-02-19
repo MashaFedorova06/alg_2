@@ -11,9 +11,11 @@ def run_all_tests_task():
     sys.path.append(base_dir)
     test_task_arr = [
         'alg_lab1.task7.tests.test_task7',
-        'alg_lab1.task11.tests.test_task11'
-        'alg_lab1.task2.tests.test_task2'
-        'alg_lab1.task8.tests.test_task8'
+        'alg_lab1.task11.tests.test_task11',
+        'alg_lab1.task2.tests.test_task2',
+        'alg_lab1.task8.tests.test_task8',
+        'alg_lab1.task4.tests.test_task4',
+        'alg_lab1.task12.tests.test_task12'
     ]
     for test_file in test_task_arr:
         task = [i for i in test_file.split(".")][1]
