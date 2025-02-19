@@ -28,6 +28,10 @@ def open_file(file_path, task):
             n = int(file.readline().strip())
             nums = list(map(int, file.readline().strip().split()))
             return n, nums
+        if task == 11:
+            W, n = list(map(int, file.readline().strip().split()))
+            nums = list(map(int, file.readline().strip().split()))
+            return W, n, nums
 
 
 

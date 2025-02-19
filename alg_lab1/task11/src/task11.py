@@ -13,7 +13,7 @@ def knapsack_max_weight(W, n, weights):
 
 
 def main(input_path, output_path):
-    W, n, weights= open_file(input_path,7)
+    W, n, weights= open_file(input_path,11)
     result = knapsack_max_weight(W, n, weights)
     print_in_terminal([W, n, weights], result, "---Task_11 Lab_1---")
     write_file(result, output_path, 11)
