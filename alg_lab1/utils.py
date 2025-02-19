@@ -24,6 +24,10 @@ def open_file(file_path, task):
                 a, b = map(int, file.readline().strip().split())
                 segments.append((a, b))
             return n, segments
+        if task == 12:
+            n = int(file.readline().strip())
+            nums = list(map(int, file.readline().strip().split()))
+            return n, nums
 
 
 
