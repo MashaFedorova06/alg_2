@@ -6,8 +6,22 @@ def open_file(file_path, task):
             for _ in range(n):
                 k, l, r = map(int, file.readline().strip().split())
                 nodes.append((k, l, r))
-        return nodes
+            return nodes
 
+        if task == 8:
+            n = int(file.readline())
+            # Создаем словарь для хранения данных о вершинах. Ключ - индекс вершины, значение - список из трех элементов
+            nodes = {i: [None, 0, 0] for i in range(1, n + 1)}
+
+            for i, line in enumerate(file.readlines(), start=1):
+                val, left, right = map(int, line.split())
+                nodes[i][0] = val  # Записываем значение вершины в словарь
+                if left != 0:
+                    nodes[i][1] = left  # Устанавливаем индекс левого ребенка
+                if right != 0:
+                    nodes[i][2] = right  # Устанавливаем индекс правого ребенка
+
+            return nodes
 
 
 

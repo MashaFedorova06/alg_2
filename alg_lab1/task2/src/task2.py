@@ -3,11 +3,12 @@ from alg_lab1.utils import open_file, write_file, print_in_terminal
 INPUT_TXT = "../txtf/input.txt"
 OUTPUT_TXT = "../txtf/output.txt"
 
+
 def min_refills(d, m, n, stops):
     stops = [0] + stops + [d]
 
-    num_refills = 0 # Количество заправок
-    current_refill = 0 # Текущая заправка
+    num_refills = 0  # Количество заправок
+    current_refill = 0  # Текущая заправка
 
     while current_refill <= n:
         last_refill = current_refill
@@ -23,6 +24,7 @@ def min_refills(d, m, n, stops):
             num_refills += 1
 
     return num_refills
+
 
 def main(input_path, output_path):
     d, m, n, stops = open_file(input_path, 2)

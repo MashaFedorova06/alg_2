@@ -32,6 +32,19 @@ def open_file(file_path, task):
             W, n = list(map(int, file.readline().strip().split()))
             nums = list(map(int, file.readline().strip().split()))
             return W, n, nums
+        if task == 100:
+            n = int(file.readline())
+            nodes = {i: [None, 0, 0] for i in range(1, n + 1)}  # Индексы с 1 по n
+
+            for i, line in enumerate(file.readlines(), start=1):
+                val, left, right = map(int, line.split())
+                nodes[i][0] = val  # Записываем значение вершины
+                if left != 0:
+                    nodes[i][1] = left  # Устанавливаем левый ребенок
+                if right != 0:
+                    nodes[i][2] = right  # Устанавливаем правый ребенок
+
+        return nodes
 
 
 
