@@ -1,5 +1,5 @@
 from alg_lab2.task6.src.task6 import main as task6
-from alg_lab2.task8.src.task8 import main as task8
+from alg_lab2.task8.src.task import main as task8
 
 
 
