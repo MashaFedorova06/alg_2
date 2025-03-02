@@ -4,7 +4,6 @@ import tracemalloc
 from alg_lab3.task2.src.task2 import find_components
 
 
-
 class TestFindComponents(unittest.TestCase):
 
     def test_single_component(self):
@@ -83,7 +82,6 @@ class TestFindComponents(unittest.TestCase):
         self.assertLessEqual(t_end, expected_time, f"Значение {t_end} превышает порог {expected_time}")
         self.assertLessEqual(memory, expected_memory, f"Значение {memory} превышает порог {expected_memory}")
 
-
     def test_large_component(self):
         """Граф, где все вершины соединены цепочкой"""
 
@@ -112,7 +110,6 @@ class TestFindComponents(unittest.TestCase):
         self.assertEqual(result, 1)
         self.assertLessEqual(t_end, expected_time, f"Значение {t_end} превышает порог {expected_time}")
         self.assertLessEqual(memory, expected_memory, f"Значение {memory} превышает порог {expected_memory}")
-
 
     def test_single_node(self):
         """Граф из одной вершины"""
