@@ -9,6 +9,14 @@ def open_file(file_path, task):
                 graph[v].append(u)
             u, v = map(int, file.readline().split())
             return n, graph, u, v
+        if task==2:
+            n, m = map(int, file.readline().split())
+            graph = {i: [] for i in range(1, n + 1)}
+            for _ in range(m):
+                u, v = map(int, file.readline().split())
+                graph[u].append(v)
+                graph[v].append(u)
+            return n, graph
 
 
 def write_file(ans, file_path, task=0):

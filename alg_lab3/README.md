@@ -4,6 +4,7 @@
 
 ### Навигация
 1. [Задача №1. Лабиринт](./task1)
+2. [Задача №2. Компоненты](./task2)
 
 
 
@@ -16,11 +17,11 @@
 ## Запуск проекта
 1. Клонируйте репозиторий:
    ```bash
-   git clone https://github.com/MashaFedorova06/alg_3
+   git clone https://github.com/MashaFedorova06/alg_2
    
 2. Перейдите в папку с проектом:
     ```bash
-   cd alg_itmo/alg_lab3
+   cd alg_2/alg_lab3
    
 3. Запустите каждое задание:
     ```bash

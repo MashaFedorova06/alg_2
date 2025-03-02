@@ -3,9 +3,6 @@ from alg_lab2.utils import open_file, write_file, print_in_terminal
 INPUT_TXT = "../txtf/input.txt"
 OUTPUT_TXT = "../txtf/output.txt"
 
-
-
-
 def is_valid_bst(nodes):
     """Проверяет, является ли данное дерево корректным BST."""
     if not nodes:

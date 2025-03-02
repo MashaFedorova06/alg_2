@@ -20,7 +20,7 @@ def main(input_path, output_path):
     print(data)
     visited = {i: False for i in range(1, data[0] + 1)}
     result = 1 if dfs(data[1], data[2], data[3], visited) else 0
-    print_in_terminal(data, result, "---Task_6 Lab_2---")
+    print_in_terminal(data, result, "---Task_1 Lab_3---")
     write_file(result, output_path)
 
 
