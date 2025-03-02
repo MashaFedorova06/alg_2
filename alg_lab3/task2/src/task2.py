@@ -26,13 +26,11 @@ def find_components(n, graph):
     return components
 
 
-
 def main(input_path, output_path):
     n, graph = open_file(input_path, 2)
     result = find_components(n, graph)
-    print_in_terminal([n,graph], result, "---Task_2 Lab_3---")
+    print_in_terminal([n, graph], result, "---Task_2 Lab_3---")
     write_file(result, output_path)
-
 
 
 if __name__ == "__main__":
