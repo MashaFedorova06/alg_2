@@ -4,6 +4,7 @@ import tracemalloc
 from alg_lab3.task2.src.task2 import find_components
 
 
+
 class TestFindComponents(unittest.TestCase):
 
     def test_single_component(self):
