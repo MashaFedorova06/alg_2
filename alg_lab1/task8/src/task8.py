@@ -7,7 +7,7 @@ OUTPUT_TXT = "../txtf/output.txt"
 def max_lectures(requests):
     requests.sort(key=lambda x: x[1])
     end = 0  # Время окончания последней лекции
-    lectures = 0 # Счетчик лекций
+    lectures = 0  # Счетчик лекций
 
     # Проходим по каждому запросу в списке
     for i in requests:
