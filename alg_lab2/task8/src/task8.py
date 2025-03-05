@@ -16,7 +16,7 @@ def get_height(node, nodes):
 def main(input_path, output_path):
     nodes = open_file(input_path, 8)
     result = get_height(1, nodes)
-    print_in_terminal(nodes, result, "---Task_8 Lab_1---")
+    print_in_terminal(nodes, result, "---Task_8 Lab_2---")
     write_file(result, output_path)
 
 
