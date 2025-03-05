@@ -1,5 +1,8 @@
 def open_file(file_path, task):
     with open(file_path, 'r') as file:
+        if task == 5:
+           return file.readlines()
+
         if task == 6:
             n = int(file.readline().strip())
             nodes = []
