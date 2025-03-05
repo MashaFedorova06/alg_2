@@ -4,7 +4,7 @@ import tracemalloc
 from alg_lab2.task5.src.task5 import BinarySearchTree
 
 
-class TestIsValidBST(unittest.TestCase):
+class BST(unittest.TestCase):
     def setUp(self):
         self.tree = BinarySearchTree()
 
