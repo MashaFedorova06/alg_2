@@ -10,6 +10,7 @@ def run_all_tests_task():
     base_dir = os.path.abspath(os.path.dirname(__file__))
     sys.path.append(base_dir)
     test_task_arr = [
+        'alg_lab2.task5.tests.test_task5',
         'alg_lab2.task6.tests.test_task6',
         'alg_lab2.task8.tests.test_task8'
     ]
